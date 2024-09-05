@@ -1,0 +1,24 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "Finish writing the project report",
+      "status": false
+    },
+    {
+      "id": 3,
+      "title": "Prepare for the client meeting",
+      "status": false
+    },
+    {
+      "id": 5,
+      "title": "Clean the house",
+      "status": false
+    },
+    {
+      "id": 7,
+      "title": "Finish the book I'm reading",
+      "status": false
+    }
+  ]
+}

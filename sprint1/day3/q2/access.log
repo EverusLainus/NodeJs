@@ -1,0 +1,6 @@
+GET 304: response-time ms - 1.1  / 
+
+PUT 500: response-time ms 25 1.1  /user/11 
+
+POST 200: response-time ms 315 1.1  /add-user 
+

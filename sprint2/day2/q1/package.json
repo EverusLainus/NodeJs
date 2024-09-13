@@ -1,0 +1,21 @@
+{
+  "name": "q1",
+  "version": "1.0.0",
+  "description": "- node.js backend with express.js - SQL for database - implement basic crud",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0",
+    "mysql2": "^3.11.2",
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

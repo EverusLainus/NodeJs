@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "Lainus#1",
+    "database": "eCom-App",
+    "host": "localhost",
+    "dialect": "mysql2"
+  },
+  "test": {
+    "username": "root",
+    "password": "Lainus#1",
+    "database": "eCom-App",
+    "host": "localhost",
+    "dialect": "mysql2"
+  },
+  "production": {
+    "username": "root",
+    "password": "Lainus#1",
+    "database": "eCom-App",
+    "host": "localhost",
+    "dialect": "mysql2"
+  }
+}

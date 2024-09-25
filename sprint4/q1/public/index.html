@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>UPload</h1>
+    <input type="file" , id="video" accept="video/*" />
+    <button onclick="uploadVideo()">upload</button>
+    <div id="uploadProgress"></div>
+    <h2>Stream the upload video</h2>
+    <video id="player" controls width="500"></video>
+  </body>
+  <script crossorigin>
+    const chunkSize = 5 * 1024 * 1024;
+    var videoFile = document.getElementById("video").files[0];
+    async function uploadVideo() {
+      console.log("upload vedio is called");
+      videoFile = document.getElementById("video").files[0];
+      if (!videoFile) {
+        alert("please enter video");
+        return;
+      }
+      const totalChunks = Math.ceil(videoFile.size / chunkSize);
+      let currentChunk = 0;
+      const uploadProgress = document.getElementById("uploadProgress");
+
+      uploadProgress.textContent = `0% uploaded`;
+
+      for (let i = 0; i < videoFile.size; i += chunkSize) {
+        currentChunk++;
+        const chunk = videoFile.slice(i, i + chunkSize);
+        const formData = new FormData();
+        formData.append("video", chunk, videoFile.name);
+        await fetch("/upload", {
+          method: "POST",
+          body: formData,
+        });
+
+        const percentComplete = Math.floor((currentChunk / totalChunks) * 100);
+        uploadProgress.textContent = `${percentComplete} uploaded`;
+      }
+
+      alert("upload complete");
+      loadVideoPlayer(videoFile.name);
+    }
+
+    function loadVideoPlayer(filename) {
+      const videoPlayer = document.getElementById("player");
+      videoPlayer.src = `/uploads/${filename}`;
+      console.log(videoPlayer.src);
+      videoPlayer.load();
+      videoPlayer.onloadeddata = function () {
+        console.log("Video is loaded and ready to play.");
+      };
+    }
+  </script>
+</html>

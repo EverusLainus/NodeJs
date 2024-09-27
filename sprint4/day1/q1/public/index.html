@@ -11,7 +11,9 @@
     <button onclick="uploadVideo()">upload</button>
     <div id="uploadProgress"></div>
     <h2>Stream the upload video</h2>
-    <video id="player" controls width="500"></video>
+    <video controls width="500">
+      <source id="player" type="video/mp4" />
+    </video>
   </body>
   <script crossorigin>
     const chunkSize = 5 * 1024 * 1024;
@@ -51,7 +53,7 @@
       const videoPlayer = document.getElementById("player");
       videoPlayer.src = `/uploads/${filename}`;
       console.log(videoPlayer.src);
-      videoPlayer.load();
+
       videoPlayer.onloadeddata = function () {
         console.log("Video is loaded and ready to play.");
       };

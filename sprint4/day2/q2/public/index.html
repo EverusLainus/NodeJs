@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Multi-Channel Chat App</title>
+  </head>
+  <body>
+    <div id="chat-container">
+      <div id="channel-section">
+        <select id="channel-select"></select>
+        <input type="text" id="new-channel" placeholder="New Channel Name" />
+        <button id="createChannel">Create Channel</button>
+      </div>
+      <div id="chat-box"></div>
+      <input type="text" id="message-input" placeholder="Enter message" />
+      <button id="sendMessage">Send</button>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

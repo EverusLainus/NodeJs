@@ -1,0 +1,11 @@
+{"level":"info","message":"app started ","timestamp":"2024-09-28T11:51:21.911Z"}
+{"level":"info","message":"get all students","timestamp":"2024-09-28T11:51:35.549Z"}
+{"level":"info","message":"HTTP GET /","meta":{},"timestamp":"2024-09-28T11:51:35.558Z"}
+{"level":"info","message":"HTTP GET /favicon.ico","meta":{},"timestamp":"2024-09-28T11:51:35.628Z"}
+{"level":"info","message":"get teacher","timestamp":"2024-09-28T11:51:43.690Z"}
+{"level":"info","message":"HTTP GET /teacher","meta":{},"timestamp":"2024-09-28T11:51:43.692Z"}
+{"level":"info","message":"HTTP GET /favicon.ico","meta":{},"timestamp":"2024-09-28T11:51:43.712Z"}
+{"level":"info","message":"HTTP GET /teac","meta":{},"timestamp":"2024-09-28T11:52:00.778Z"}
+{"level":"info","message":"get all students","timestamp":"2024-09-28T11:52:54.331Z"}
+{"level":"info","message":"HTTP GET /","meta":{},"timestamp":"2024-09-28T11:52:54.333Z"}
+{"level":"info","message":"HTTP GET /favicon.ico","meta":{},"timestamp":"2024-09-28T11:52:54.355Z"}

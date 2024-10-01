@@ -13,7 +13,9 @@ export const QualitySelector = () => {
             setSelectedQuality(e.target.value);
           }}
           value={selectedQuality}
-        ></select>
+        >
+          {qualities.map((quality, index) => {})}
+        </select>
       </div>
     </div>
   );

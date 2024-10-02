@@ -5,6 +5,7 @@ const { Server } = require("socket.io");
 const { saveMessages } = require("./controller/message.controller");
 const { messageRouter } = require("./routes/message.routes");
 const dotenv = require("dotenv");
+const cors = require("cors");
 dotenv.config();
 
 const app = express();

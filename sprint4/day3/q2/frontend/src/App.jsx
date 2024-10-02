@@ -34,7 +34,7 @@ function App() {
             })}
           </ul>
         </div>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div style={{ marginBottom: "20px" }}>
             <input
               value={userName}
@@ -57,7 +57,7 @@ function App() {
             />
           </div>
 
-          <button></button>
+          <button type="submit">send</button>
         </form>
       </div>
     </>
